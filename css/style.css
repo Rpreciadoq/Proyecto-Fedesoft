@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Le damos un tamaño y un margen para centrar*/
+body{
+    width: 75%;
+    margin: auto;
+}
+/*Centramos el texto*/
+#titulo{
+    
+    text-align: center;
+}
+/*damos color un margen y una posicion al nav*/
+nav{
+    background: #528fd5;
+    margin-top: 20px;
+    position: relative;
+}
+
+/*quitamos los puntos y ponemos overflow para que tome el color*/
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+/*todos los elementos que cumplan las escalas flotaran */
+nav > ul > li{
+    float: left;
+}
+
+/*quitamos las decoraciones de los links ponemos un color hacemos que se ubiquen en bloques y les damos un espacio*/
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+}
+
+/*cuando el mouse pase por el li cambiara el fondo*/
+nav ul li a:hover{
+    background: #3669a3;
+}
+
+/*Que se ubiquen el bloques*/
+nav > ul > li:hover ul{
+    display: block;
+}
+
+/*Sub Menu*/
+
+nav ul li ul{
+    position: absolute;
+    background: #528fd5;
+    display: none;
+}
+
+/*el boton ingresar flotara*/
+#ingresar{
+    float: right;
+}
+
+/*le damos un margen al contenedor*/
+.primerContenedor{
+    margin: 2% 0%;
+    overflow: hidden;
+}
+
+/*le damos un ancho y le ponemos sombra*/
+#imagen1{
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+}
+
+/*le damos un ancho*/
+.segundoContenedor{
+    width: 100%;
+    overflow: hidden;
+}
+
+/*le damos un ancho y que flote a la izquierda*/
+.contenido{
+    width: 70%;
+    float: left;
+    
+}
+
+/*le damos un ancho y que flote a la derecha*/
+.publicidad{
+    width: 25%;
+    float: right;
+    
+}
+
+/*le damos un ancho a la imagen*/
+#imgPubli{
+    width: 100%;
+}
+
+/*le damos un ancho un color de fondo y un color de letra*/
+footer{
+    width: 100%;
+    background: #528fd5;
+    color: #fff;
+    overflow: hidden;
+}
+/*le damos un ancho al footer que flote a la izquierda y un margen*/
+.datosFooter{
+    width: 70%;
+    float: left;
+    text-align: center;
+    margin: 10px 0;
+}
+/*le damos a las imagenes un ancho que flote a la derecha y un margen*/
+
+.imagenesFooter{
+    width: 30%;
+    float: right;
+    margin: 30px 0;
+}
+
+/*le damos un ancho a la imagen y un largo*/
+#logo{
+    width: 50%;
+    height: 70px;
+}
